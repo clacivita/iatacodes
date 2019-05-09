@@ -5,6 +5,8 @@ namespace IataCodes
 {
     public partial class AirportsContext : DbContext
     {
+        private const string ConnectionString = "Server=airports.culwsrqbkqhh.us-east-1.rds.amazonaws.com;Database=Airports;UID=clacivita;PWD=ZaphodB1!";
+
         public AirportsContext()
         {
         }
@@ -21,7 +23,7 @@ namespace IataCodes
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
-                optionsBuilder.UseSqlServer("Server=airports.culwsrqbkqhh.us-east-1.rds.amazonaws.com;Database=Airports;UID=clacivita;PWD=ZaphodB1!");
+                optionsBuilder.UseSqlServer(ConnectionString);
             }
         }
 

@@ -46,17 +46,24 @@ namespace IataCodes.Controllers
             if (null == iataCode) { return BadRequest(); }
             #endregion
 
-            var airport = _dbContext.Airports
-                .Where(a => a.Iatacode == iataCode)
-                .SingleOrDefault<Airports>();
+            try
+            {
+                var airport = _dbContext.Airports
+                    .Where(a => a.Iatacode == iataCode)
+                    .SingleOrDefault<Airports>();
 
-            if (null != airport)
-            {
-                return Ok(airport);
+                if (null != airport)
+                {
+                    return Ok(airport);
+                }
+                else
+                {
+                    return NotFound();
+                }
             }
-            else
+            catch (Exception e)
             {
-                return NotFound();
+                return Ok(e);
             }
         }    
     }

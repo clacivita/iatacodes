@@ -12,6 +12,28 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		buildspec.yml = buildspec.yml
 	EndProjectSection
 EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "StaticSite", "StaticSite\", "{B21A4469-7A61-4487-B35B-91C95CBA1D6E}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.7.2"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_10634"
+		Debug.AspNetCompiler.PhysicalPath = "StaticSite\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_10634\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_10634"
+		Release.AspNetCompiler.PhysicalPath = "StaticSite\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_10634\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "10634"
+		SlnRelativePath = "StaticSite\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -28,6 +50,10 @@ Global
 		{BA470421-8D86-42C2-A39D-0F5E2532EB8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BA470421-8D86-42C2-A39D-0F5E2532EB8E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{BA470421-8D86-42C2-A39D-0F5E2532EB8E}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{B21A4469-7A61-4487-B35B-91C95CBA1D6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B21A4469-7A61-4487-B35B-91C95CBA1D6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B21A4469-7A61-4487-B35B-91C95CBA1D6E}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{B21A4469-7A61-4487-B35B-91C95CBA1D6E}.Release|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
