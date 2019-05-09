@@ -4,6 +4,11 @@
         <name>IataCodes</name>
     </assembly>
     <members>
+        <member name="T:IataCodes.Airports">
+            <summary>
+            The information about an individual airport.
+            </summary>
+        </member>
         <member name="P:IataCodes.Airports.Id">
             <summary>
             The internal unique ID of the airport.

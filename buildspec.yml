@@ -3,8 +3,8 @@ version: 0.2
 phases:
   build:
     commands:
-      - dotnet restore
-      - dotnet build
+      - dotnet restore .\IataCodes\IataCodes.csproj
+      - dotnet build .\IataCodes\IataCodes.csproj
 artifacts:
   files:
-    - .\bin\Debug\netcoreapp2.2\*
+    - .\IataCodes\bin\Debug\netcoreapp2.2\*
