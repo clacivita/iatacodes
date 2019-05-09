@@ -31,6 +31,10 @@ namespace IataCodes
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             services.AddTransient(typeof(AirportsContext));
+            services.AddCors(options =>
+            {
+                options.AddPolicy("AllowEveryone", policy => policy.AllowAnyOrigin());
+            });
             ConfigureSwagger(services);
         }
 

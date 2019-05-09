@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 
 namespace IataCodes.Controllers
@@ -40,6 +41,7 @@ namespace IataCodes.Controllers
         [HttpGet]
         [Route("{iataCode}")]
         [ProducesResponseType(200, Type=typeof(Airports))]
+        [EnableCors("AllowEveryone")]
         public IActionResult Get(string iataCode)
         {
             #region Preconditions
