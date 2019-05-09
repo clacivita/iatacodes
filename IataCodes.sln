@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.329
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IataCodes", "IataCodes\IataCodes.csproj", "{5E2743C6-CE4D-4220-A6AB-DD438736393D}"
 EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "AirportsDb", "AirportsDb\AirportsDb.sqlproj", "{BA470421-8D86-42C2-A39D-0F5E2532EB8E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,12 @@ Global
 		{5E2743C6-CE4D-4220-A6AB-DD438736393D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5E2743C6-CE4D-4220-A6AB-DD438736393D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5E2743C6-CE4D-4220-A6AB-DD438736393D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA470421-8D86-42C2-A39D-0F5E2532EB8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA470421-8D86-42C2-A39D-0F5E2532EB8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA470421-8D86-42C2-A39D-0F5E2532EB8E}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{BA470421-8D86-42C2-A39D-0F5E2532EB8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA470421-8D86-42C2-A39D-0F5E2532EB8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA470421-8D86-42C2-A39D-0F5E2532EB8E}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

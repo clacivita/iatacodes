@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>IataCodes</name>
+    </assembly>
+    <members>
+        <member name="P:IataCodes.Airports.Id">
+            <summary>
+            The internal unique ID of the airport.
+            </summary>
+        </member>
+        <member name="P:IataCodes.Airports.FullName">
+            <summary>
+            The full name of the airport.
+            </summary>
+        </member>
+        <member name="P:IataCodes.Airports.City">
+            <summary>
+            The city in which the airport resides.
+            </summary>
+        </member>
+        <member name="P:IataCodes.Airports.FullCountry">
+            <summary>
+            The full country in which the airport resides.
+            </summary>
+        </member>
+        <member name="P:IataCodes.Airports.Iatacode">
+            <summary>
+            The IATA code of the airport.
+            </summary>
+        </member>
+        <member name="P:IataCodes.Airports.Icaocode">
+            <summary>
+            The IACO code of the airport.
+            </summary>
+        </member>
+        <member name="P:IataCodes.Airports.Latitude">
+            <summary>
+            The latitude of the airport.
+            </summary>
+        </member>
+        <member name="P:IataCodes.Airports.Longitude">
+            <summary>
+            The longitude of the airport.
+            </summary>
+        </member>
+        <member name="P:IataCodes.Airports.Altitude">
+            <summary>
+            The altitude of the airport, in feet.
+            </summary>
+        </member>
+        <member name="P:IataCodes.Airports.Timezone">
+            <summary>
+            The number of hours offset from UTC.
+            </summary>
+        </member>
+        <member name="P:IataCodes.Airports.Dst">
+            <summary>
+            The daylight savings time region.
+            </summary>
+        </member>
+        <member name="P:IataCodes.Airports.TimezoneName">
+            <summary>
+            The full name of the timezone.
+            </summary>
+        </member>
+        <member name="P:IataCodes.Airports.Type">
+            <summary>
+            The type of transportation entity (usually "airport").
+            </summary>
+        </member>
+        <member name="P:IataCodes.Airports.Source">
+            <summary>
+            The source of the airport data.
+            </summary>
+        </member>
+        <member name="T:IataCodes.Controllers.AirportsController">
+            <summary>
+            Endpoint to manage the Airport resource.
+            </summary>
+        </member>
+        <member name="M:IataCodes.Controllers.AirportsController.Get(System.String)">
+            <summary>
+            Gets the airport with the specified IATA code.
+            </summary>
+            <param name="iataCode">The IATA code of the airport to retrieve.</param>
+            <returns>The airport's information.</returns>
+            <response code="200">The airport was successfully found.</response>
+            <response code="404">The airport with the specified IATA code was not found.</response>
+        </member>
+    </members>
+</doc>
